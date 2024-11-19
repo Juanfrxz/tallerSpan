@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container__row {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.celda {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 3px;
+    border: 1px solid limegreen;
+    border-radius: 3px;
+}
+
+.container__span {
+    border: 1px solid limegreen;
+}
+
+/* Primera fila - selecciona los impares */
+.container__row:nth-of-type(1) .container__span:nth-child(odd) {
+    background-color: limegreen;
+}
+
+/* Segunda fila - selecciona específicamente 1, 5 y 7 */
+.container__row:nth-of-type(2) .container__span:nth-child(1),
+.container__row:nth-of-type(2) .container__span:nth-child(5),
+.container__row:nth-of-type(2) .container__span:nth-child(7) {
+    background-color: limegreen;
+}
+
+/* Tercera fila - selecciona 1, 4, 6 y 8 */
+.container__row:nth-of-type(3) span.container__span:nth-child(1),
+.container__row:nth-of-type(3) span.container__span:nth-child(4),
+.container__row:nth-of-type(3) span.container__span:nth-child(6),
+.container__row:nth-of-type(3) span.container__span:nth-child(8) {
+    background-color: limegreen;
+}
+
+em {
+    font-style: italic;
+    border: 1px solid limegreen;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin: 3px;
+    display: inline-block;
+}
